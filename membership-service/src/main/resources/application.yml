@@ -1,14 +1,3 @@
 spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/membership?serverTimezone=UTC&characterEncoding=UTF-8
-    username: root
-    password: 1234
-  jpa:
-    database-platform:
-    generate-ddl: true
-    database: mysql
-    hibernate:
-      ddl-auto: create-drop
-    show-sql: true
-    open-in-view: false
+  profiles:
+    active: local

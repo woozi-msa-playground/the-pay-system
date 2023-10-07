@@ -22,7 +22,7 @@ PUT http://localhost:8080/membership/modify/{{membershipId}}
 Content-Type: application/json
 
 {
-  "name": "kimmiryang",
+  "name": "kimmiryang❤",
   "email": "kimmiryang@miryangserver.com",
   "address": "Grindelwald, Swiss",
   "isCorp": false
