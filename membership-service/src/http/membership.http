@@ -1,0 +1,21 @@
+### Resgiser Membership
+POST http://localhost:8080/membership/register
+Content-Type: application/json
+
+{
+  "name": "kimwoojae",
+  "email": "woozi@wooziserver.com",
+  "address": "Seoul, Korea",
+  "isCorp": false
+}
+
+> {%
+    client.global.set("membershipId", response.body.membershipId);
+%}
+
+### Find Membership
+GET http://localhost:8080/membership/{{membershipId}}
+Content-Type: application/json
+
+
+

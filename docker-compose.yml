@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  membership-storage:
+    container_name: membership-storage
+    image: mysql:8.0.34
+    restart: always
+    environment:
+      - MYSQL_DATABASE=membership
+      - MYSQL_ROOT_PASSWORD=1234
+    ports:
+      - '3306:3306'
