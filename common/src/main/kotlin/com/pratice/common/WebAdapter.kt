@@ -1,4 +1,4 @@
-package com.practice.msa.common
+package com.pratice.common
 
 import org.springframework.core.annotation.AliasFor
 import org.springframework.stereotype.Component
