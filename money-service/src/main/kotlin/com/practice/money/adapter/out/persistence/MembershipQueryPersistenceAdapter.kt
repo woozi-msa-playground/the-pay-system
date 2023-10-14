@@ -3,7 +3,7 @@ package com.practice.money.adapter.out.persistence
 import com.practice.money.application.port.out.FindMemberMoneyPort
 import com.practice.money.domain.MemberMoney
 import com.practice.money.domain.vo.MembershipId
-import com.pratice.common.PersistenceAdapter
+import com.practice.common.PersistenceAdapter
 import org.springframework.transaction.annotation.Transactional
 
 @PersistenceAdapter

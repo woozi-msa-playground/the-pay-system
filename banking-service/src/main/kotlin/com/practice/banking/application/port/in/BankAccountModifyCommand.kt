@@ -1,6 +1,6 @@
 package com.practice.banking.application.port.`in`
 
-import com.pratice.common.SelfValidating
+import com.practice.common.SelfValidating
 import jakarta.validation.constraints.AssertTrue
 import jakarta.validation.constraints.Min
 import jakarta.validation.constraints.NotBlank

@@ -10,7 +10,7 @@ import com.practice.banking.domain.vo.FromBankName
 import com.practice.banking.domain.vo.MoneyAmount
 import com.practice.banking.domain.vo.ToBankAccountNumber
 import com.practice.banking.domain.vo.ToBankName
-import com.pratice.common.PersistenceAdapter
+import com.practice.common.PersistenceAdapter
 import java.util.UUID
 
 @PersistenceAdapter

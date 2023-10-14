@@ -1,7 +1,7 @@
 package com.practice.money.adapter.`in`.web
 
 import com.practice.money.application.port.`in`.IncreaseMemberMoneyUseCase
-import com.pratice.common.WebAdapter
+import com.practice.common.WebAdapter
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody

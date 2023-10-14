@@ -9,7 +9,7 @@ import com.practice.msa.domain.vo.MembershipEmail
 import com.practice.msa.domain.vo.MembershipIsCorp
 import com.practice.msa.domain.vo.MembershipIsValid
 import com.practice.msa.domain.vo.MembershipName
-import com.pratice.common.UseCase
+import com.practice.common.UseCase
 
 @UseCase
 class RegisterMembershipUseCaseImpl(

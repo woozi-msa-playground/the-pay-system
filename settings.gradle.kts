@@ -5,6 +5,7 @@ include(
     "membership-service",
     "banking-service",
     "money-service",
+    "logging-consumer-service"
 )
 
 pluginManagement {

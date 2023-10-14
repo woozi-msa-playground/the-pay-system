@@ -6,12 +6,11 @@ import com.practice.money.application.port.out.FindMemberMoneyPort
 import com.practice.money.application.port.out.IncreaseMemberMoneyPort
 import com.practice.money.application.port.out.InitializeMemberMoneyPort
 import com.practice.money.domain.MemberMoney
-import com.practice.money.domain.vo.MemberMoneyId
 import com.practice.money.domain.vo.MoneyBalance
 import com.practice.money.domain.vo.MoneyChangingStatus
 import com.practice.money.domain.vo.MoneyChangingType
 import com.practice.money.domain.vo.MembershipId
-import com.pratice.common.UseCase
+import com.practice.common.UseCase
 
 @UseCase
 class IncreaseMemberMoneyUseCaseImpl(

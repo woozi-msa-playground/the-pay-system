@@ -3,7 +3,7 @@ package com.practice.msa.application
 import com.practice.msa.application.port.`in`.FindMembershipUseCase
 import com.practice.msa.application.port.out.FindMembershipPort
 import com.practice.msa.domain.Membership
-import com.pratice.common.UseCase
+import com.practice.common.UseCase
 
 @UseCase
 class FindMembershipUseCaseImpl(

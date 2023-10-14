@@ -9,7 +9,7 @@ import com.practice.banking.domain.vo.MembershipId
 import com.practice.banking.domain.vo.BankAccountId
 import com.practice.banking.application.port.out.FindBankAccountPort
 import com.practice.banking.application.port.out.ModifyBankAccountPort
-import com.pratice.common.PersistenceAdapter
+import com.practice.common.PersistenceAdapter
 import jakarta.persistence.EntityNotFoundException
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.transaction.annotation.Transactional

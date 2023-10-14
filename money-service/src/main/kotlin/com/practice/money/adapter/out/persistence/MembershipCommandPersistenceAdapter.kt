@@ -7,7 +7,7 @@ import com.practice.money.domain.vo.MembershipId
 import com.practice.money.domain.vo.MoneyBalance
 import com.practice.money.domain.vo.MoneyChangingStatus
 import com.practice.money.domain.vo.MoneyChangingType
-import com.pratice.common.PersistenceAdapter
+import com.practice.common.PersistenceAdapter
 import org.springframework.transaction.annotation.Transactional
 import java.time.LocalDateTime
 import java.util.UUID

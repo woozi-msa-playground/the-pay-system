@@ -10,7 +10,7 @@ import com.practice.msa.domain.vo.MembershipId
 import com.practice.msa.domain.vo.MembershipIsCorp
 import com.practice.msa.domain.vo.MembershipIsValid
 import com.practice.msa.domain.vo.MembershipName
-import com.pratice.common.PersistenceAdapter
+import com.practice.common.PersistenceAdapter
 import jakarta.persistence.EntityNotFoundException
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.transaction.annotation.Transactional
