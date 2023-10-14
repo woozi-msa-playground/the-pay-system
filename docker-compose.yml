@@ -2,11 +2,11 @@ version: "3.8"
 
 services:
   membership-storage-local:
-    container_name: membership-storage-local
+    container_name: local-storage
     image: mysql:8.0.34
     restart: always
     environment:
-      - MYSQL_DATABASE=membership
+      - MYSQL_DATABASE=local
       - MYSQL_ROOT_PASSWORD=1234
     ports:
       - '3306:3306'
@@ -20,7 +20,29 @@ services:
       - MYSQL_DATABASE=membership
       - MYSQL_ROOT_PASSWORD=1234
     volumes:
-      - ./infra/mysql/initdb.d:/docker-entrypoint-initdb.d
+      - ./infra/mysql/membership/initdb.d:/docker-entrypoint-initdb.d
+  banking-storage:
+    container_name: banking-storage
+    image: mysql:8.0.34
+    restart: always
+    ports:
+      - '3308:3306'
+    environment:
+      - MYSQL_DATABASE=membership
+      - MYSQL_ROOT_PASSWORD=1234
+    volumes:
+      - ./infra/mysql/banking/initdb.d:/docker-entrypoint-initdb.d
+  money-storage:
+    container_name: money-storage
+    image: mysql:8.0.34
+    restart: always
+    ports:
+      - '3309:3306'
+    environment:
+      - MYSQL_DATABASE=membership
+      - MYSQL_ROOT_PASSWORD=1234
+    volumes:
+      - ./infra/mysql/money/initdb.d:/docker-entrypoint-initdb.d
   membership-service:
     container_name: membership-service
     image: membership-service:latest
@@ -28,7 +50,7 @@ services:
     depends_on:
       - membership-storage
     ports:
-      - '8081:8080'
+      - '18080:8080'
     environment:
       - "SPRING_PROFILES_ACTIVE=docker"
 networks:
