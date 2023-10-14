@@ -3,6 +3,8 @@ rootProject.name = "fastcampus-msa-practice"
 include(
     "common",
     "membership-service",
+    "banking-service",
+    "money-service",
 )
 
 pluginManagement {
