@@ -1,4 +1,4 @@
-package com.pratice.common
+package com.practice.common
 
 import org.springframework.core.annotation.AliasFor
 import org.springframework.stereotype.Component
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component
 @Retention(AnnotationRetention.RUNTIME)
 @MustBeDocumented
 @Component
-annotation class InternalSystemAdapter(
+annotation class ExternalSystemAdapter(
     @get: AliasFor(annotation = Component::class)
     val value: String = ""
 )

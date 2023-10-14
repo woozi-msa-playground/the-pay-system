@@ -1,7 +1,7 @@
 package com.practice.msa.adapter.`in`.web
 
 import com.practice.msa.application.port.`in`.RegisterMembershipUseCase
-import com.pratice.common.WebAdapter
+import com.practice.common.WebAdapter
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody

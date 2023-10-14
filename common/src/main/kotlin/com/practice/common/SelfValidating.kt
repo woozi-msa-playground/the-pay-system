@@ -1,4 +1,4 @@
-package com.pratice.common
+package com.practice.common
 
 import jakarta.validation.ConstraintViolationException
 import jakarta.validation.Validation

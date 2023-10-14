@@ -3,3 +3,8 @@ spring:
     active: local
 server:
   port: 8081
+kafka:
+  clusters:
+    bootstrapservers: localhost:29092
+logging:
+    topic: msa.logging.out.stdout

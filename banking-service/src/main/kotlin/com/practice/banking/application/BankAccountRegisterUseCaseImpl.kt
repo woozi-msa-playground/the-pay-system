@@ -11,7 +11,7 @@ import com.practice.banking.domain.vo.BankAccountNumber
 import com.practice.banking.domain.vo.BankName
 import com.practice.banking.domain.vo.LinkedStatusIsValid
 import com.practice.banking.domain.vo.MembershipId
-import com.pratice.common.UseCase
+import com.practice.common.UseCase
 
 @UseCase
 class BankAccountRegisterUseCaseImpl(

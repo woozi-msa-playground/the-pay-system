@@ -1,0 +1,7 @@
+server:
+  port: 8084
+kafka:
+  clusters:
+    bootstrapservers: localhost:29092
+logging:
+  topic: msa.logging.out.stdout

@@ -1,6 +1,6 @@
 package com.practice.money.application.port.`in`
 
-import com.pratice.common.SelfValidating
+import com.practice.common.SelfValidating
 import jakarta.validation.constraints.NotNull
 
 data class IncreaseMemberMoneyCommand(
