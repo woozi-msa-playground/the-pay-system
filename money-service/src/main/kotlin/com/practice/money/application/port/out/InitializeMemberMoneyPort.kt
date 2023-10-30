@@ -1,6 +1,7 @@
 package com.practice.money.application.port.out
 
-import com.practice.money.domain.MemberMoney
+import com.practice.money.domain.MemberMoneyChangingRequest
+import com.practice.money.domain.vo.MemberMoney
 import com.practice.money.domain.vo.MoneyBalance
 import com.practice.money.domain.vo.MoneyChangingStatus
 import com.practice.money.domain.vo.MoneyChangingType
@@ -12,5 +13,5 @@ fun interface InitializeMemberMoneyPort {
         moneyChangingType: MoneyChangingType,
         moneyChangingStatus: MoneyChangingStatus,
         moneyBalance: MoneyBalance,
-    ): MemberMoney
+    ): MemberMoneyChangingRequest
 }

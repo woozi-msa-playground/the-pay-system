@@ -12,5 +12,10 @@ spring:
       ddl-auto: create-drop
     show-sql: true
     open-in-view: false
-
-
+service:
+  membership:
+    url: http://localhost:8080
+  banking:
+    url: http://localhost:8081
+  money:
+    url: http://localhost:8082

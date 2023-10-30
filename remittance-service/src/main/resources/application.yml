@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: local
+server:
+  port: 8085
+kafka:
+  clusters:
+    bootstrapservers: localhost:29092
+service:
+  membership:
+    url: http://membership:8080
+  banking:
+    url: http://baking:8081
+  money:
+    url: http://money:8082
+logging:
+  topic: msa.logging.out.stdout
+task:
+  result:
+    topic : mirayngTOwoojae
+  topic: woojaeTOmirayng

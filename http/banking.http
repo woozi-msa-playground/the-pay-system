@@ -1,0 +1,34 @@
+POST http://localhost:8081/bank/register
+Content-Type: application/json
+
+{
+  "membershipId": 1,
+  "bankName": "woozi-bank",
+  "bankAccountNumber": "12345678",
+  "linkedIsValid": true
+}
+
+
+###
+POST http://localhost:8081/bank/register/eda
+Content-Type: application/json
+
+{
+"membershipId": 2,
+"bankName": "woozi-bank",
+"bankAccountNumber": "12345678",
+"linkedIsValid": true
+}
+
+###
+POST http://localhost:8081/bank/firmbanking/transfer-eda
+Content-Type: application/json
+
+{
+  "fromBankName": "woozi-bank",
+  "fromBankAccountNumber": "12345678",
+  "toBankName": "miryang-bank",
+  "toBankAccountNumber": "12345678",
+  "moneyAmount": 10000
+}
+

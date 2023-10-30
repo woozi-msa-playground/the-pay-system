@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface SpringDataMemberMoneyJpaRepository : JpaRepository<MemberMoneyJpaEntity, Long> {
-    fun findByMembershipId(membershipId: String): MemberMoneyJpaEntity?
+    fun findByMembershipId(membershipId: Long): MemberMoneyJpaEntity?
 }

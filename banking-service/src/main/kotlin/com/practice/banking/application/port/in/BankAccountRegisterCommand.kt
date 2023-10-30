@@ -17,7 +17,7 @@ data class BankAccountRegisterCommand(
 
     @field:NotNull
     @field:NotBlank
-    val bankAccount: String,
+    val bankAccountNumber: String,
 
     @field:AssertTrue
     val linkedStatusIsValid: Boolean,

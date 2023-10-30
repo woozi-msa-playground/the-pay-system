@@ -19,7 +19,7 @@ class BankAccountModifyUseCaseImpl(
     override fun modifyBankAccount(command: BankAccountModifyCommand): BankAccount =
         modifyBankAccountPort.modifyBankAccount(
             BankAccountId(command.bankAccountId.toString()),
-            MembershipId(command.membershipId.toString()),
+            MembershipId(command.membershipId),
             BankName(command.bankName),
             BankAccountNumber(command.bankAccount),
             LinkedStatusIsValid(command.linkedStatusIsValid)

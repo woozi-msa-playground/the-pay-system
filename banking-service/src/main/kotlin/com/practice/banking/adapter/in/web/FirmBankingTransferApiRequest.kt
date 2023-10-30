@@ -8,7 +8,6 @@ data class FirmBankingTransferApiRequest(
     private val toBankName: String,
     private val toBankAccountNumber: String,
     private val moneyAmount: Int,
-    private val firmBankingStatus: Int,
 ) {
     fun toCommand(): FirmBankingTransferCommand =
         FirmBankingTransferCommand(

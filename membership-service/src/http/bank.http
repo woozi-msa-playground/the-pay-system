@@ -1,0 +1,9 @@
+POST http://localhost:8081/bank/register
+Content-Type: application/json
+
+{
+  "membershipId": 1,
+  "bankName": "kimmiryang❤",
+  "bankAccountNumber": "12345678",
+  "linkedIsValid": true
+}

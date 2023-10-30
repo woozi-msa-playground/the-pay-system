@@ -14,6 +14,7 @@ class BankAccountJpaEntity(
     var bankName: String,
     var bankAccountNumber: String,
     var linkedStatusIsValid: Boolean,
+    var bankAccountAggregateIdentifier: String,
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     var bankAccountId: Long? = null
@@ -35,6 +36,6 @@ class BankAccountJpaEntity(
     }
 
     override fun toString(): String {
-        return "BankAccountJpaEntity(membershipId=$membershipId, bankName='$bankName', bankAccountNumber='$bankAccountNumber', linkedStatusIsValid=$linkedStatusIsValid, bankAccountId=$bankAccountId)"
+        return "BankAccountJpaEntity(membershipId=$membershipId, bankName='$bankName', bankAccountNumber='$bankAccountNumber', linkedStatusIsValid=$linkedStatusIsValid, bankAccountAggregateIdentifier='$bankAccountAggregateIdentifier', bankAccountId=$bankAccountId)"
     }
 }

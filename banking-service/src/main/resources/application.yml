@@ -8,3 +8,17 @@ kafka:
     bootstrapservers: localhost:29092
 logging:
     topic: msa.logging.out.stdout
+service:
+  membership:
+    url: http://membership:8080
+axon:
+  axonserver:
+    servers: localhost:8124
+  serializer:
+    events: jackson
+    messages: jackson
+    general: jackson
+  deserializer:
+    general: jackson
+    events: jackson
+    messages: jackson

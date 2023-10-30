@@ -49,6 +49,7 @@ services:
     restart: always
     depends_on:
       - membership-storage
+      - axon-server
     ports:
       - '18080:8080'
     environment:
@@ -101,6 +102,15 @@ services:
       - KAFKA_CLUSTERS_0_NAME=local
       - KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka:9092
       - KAFKA_CLUSTERS_0_ZOOKEEPER=zookeeper:2181
+  axon-server:
+    container_name: axon-server
+    image: axoniq/axonserver:4.6.3-jdk-11-dev
+    networks:
+      - pay-system-networks
+    ports:
+      - "8024:8024"
+      - "8124:8124"
+
 networks:
   pay-system-networks:
     driver: bridge

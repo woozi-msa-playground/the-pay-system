@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/local?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: 1234
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: true
+    database: mysql
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    open-in-view: false
+service:
+  membership:
+    url: http://localhost:8080
+  banking:
+    url: http://localhost:8081
+  money:
+    url: http://localhost:8082
+

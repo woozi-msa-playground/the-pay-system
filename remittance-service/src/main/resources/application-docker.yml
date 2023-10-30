@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://remittance-storage:3306/money?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: 1234
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: false
+    database: mysql
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    open-in-view: false
+service:
+  membership:
+    url: http://membership:8080
+  banking:
+    url: http://baking:8081
+  money:
+    url: http://money:8082

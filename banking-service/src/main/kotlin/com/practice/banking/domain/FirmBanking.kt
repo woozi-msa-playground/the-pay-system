@@ -2,11 +2,13 @@ package com.practice.banking.domain
 
 import com.practice.banking.domain.vo.FirmBankingId
 import com.practice.banking.domain.vo.FirmBankingStatus
+import com.practice.banking.domain.vo.FirmbankingAggregateIdentifier
 import com.practice.banking.domain.vo.FromBankAccountNumber
 import com.practice.banking.domain.vo.FromBankName
 import com.practice.banking.domain.vo.MoneyAmount
 import com.practice.banking.domain.vo.ToBankAccountNumber
 import com.practice.banking.domain.vo.ToBankName
+import java.util.UUID
 
 data class FirmBanking(
     val firmBankingId: String,
@@ -16,6 +18,8 @@ data class FirmBanking(
     val toBankAccountNumber: String,
     val moneyAmount: Int,
     val firmBankingStatus: Int,
+    val uuid: String,
+    val firmbankingAggregateIdentifier: String,
 ) {
     fun updateStatus(firmBankingStatus: Int): FirmBanking =
         FirmBanking(
@@ -25,7 +29,9 @@ data class FirmBanking(
             this.toBankName,
             this.toBankAccountNumber,
             this.moneyAmount,
-            firmBankingStatus
+            firmBankingStatus,
+            this.uuid,
+            this.firmbankingAggregateIdentifier
         )
 
     constructor(
@@ -35,7 +41,9 @@ data class FirmBanking(
         toBankName: ToBankName,
         toBankAccountNumber: ToBankAccountNumber,
         moneyAmount: MoneyAmount,
-        firmBankingStatus: FirmBankingStatus
+        firmBankingStatus: FirmBankingStatus,
+        uuid: UUID,
+        firmbankingAggregateIdentifier: FirmbankingAggregateIdentifier
     ) : this(
         firmBankingId.firmBankingId,
         fromBankName.fromBankName,
@@ -44,5 +52,7 @@ data class FirmBanking(
         toBankAccountNumber.toBankAccountNumber,
         moneyAmount.moneyAmount,
         firmBankingStatus.firmBankingStatus,
+        uuid.toString(),
+        firmbankingAggregateIdentifier.firmbankingAggregateIdentifier
     )
 }

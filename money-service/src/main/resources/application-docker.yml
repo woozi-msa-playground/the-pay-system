@@ -12,3 +12,8 @@ spring:
       ddl-auto: none
     show-sql: false
     open-in-view: false
+service:
+  membership:
+    url: http://membership:8080
+  banking:
+    url: http://baking:8081

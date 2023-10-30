@@ -1,6 +1,7 @@
 package com.practice.banking.application.port.out
 
 import com.practice.banking.domain.BankAccount
+import com.practice.banking.domain.vo.BankAccountAggregateIdentifier
 import com.practice.banking.domain.vo.BankAccountNumber
 import com.practice.banking.domain.vo.BankName
 import com.practice.banking.domain.vo.MembershipId
@@ -12,5 +13,6 @@ fun interface RegisterBankAccountPort {
         bankName: BankName,
         bankAccountNumber: BankAccountNumber,
         linkedStatusIsValid: LinkedStatusIsValid,
+        bankAccountAggregateIdentifier: BankAccountAggregateIdentifier,
     ): BankAccount
 }

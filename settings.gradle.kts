@@ -5,7 +5,10 @@ include(
     "membership-service",
     "banking-service",
     "money-service",
-    "logging-consumer-service"
+    "logging-consumer-service",
+    "task-consumer-service",
+    "remittance-service",
+    "payment-service",
 )
 
 pluginManagement {

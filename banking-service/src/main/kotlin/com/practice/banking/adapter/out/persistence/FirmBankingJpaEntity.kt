@@ -17,6 +17,7 @@ class FirmBankingJpaEntity(
     var moneyAmount: Int,
     var firmBankingStatus: Int,
     var uuid: UUID,
+    var firmbankingAggregateIdentifier: String,
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     var firmBankingId: Long? = null

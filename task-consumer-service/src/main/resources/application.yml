@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: local
+server:
+  port: 8083
+kafka:
+  clusters:
+    bootstrapservers: localhost:29092
+logging:
+  topic: msa.logging.out.stdout
+task:
+  result:
+    topic : mirayngTOwoojae
+  topic: woojaeTOmirayng
